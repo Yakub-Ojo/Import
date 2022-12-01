@@ -9,127 +9,226 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class= " p-3 bg-primary text-white text-center topic fw-bold py-0">
-    <p>Practice Questions</p>
-    <p><span class="bg-primary text-black fs-3 fw-lighter fst-italic p-0">Answer all questions</span></p> 
-    
+  <div class= " my-0 p-3 bg-primary text-white text-center topic fw-bold">
+      <div class="m-auto py-auto bg-danger">
+        <h1>Practice Questions</h1>
+      </div>
+      <div class="my-auto py-auto bg-black">
+        <p><span class="bg-primary text-black fs-3 fw-lighter fst-italic p-0">Answer all questions</span></p>
+      </div>
   </div>
 
-  <div class="Q-container px-5">
-    <form class="q1">
-      <p>1. Which is greater than 4?</p>
-      <input type="radio" name="a">
-      <label for="a">(a) 5,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(b) -5,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(c) -1/2,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(d) -25.</label> <br>
-    </form> <br>
-    <form class="q2">
-      <p>2. Which is the smallest?</p>
-      <input type="radio" name="a">
-      <label for="a">(a) -1,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(b) -1/2,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(c) 0,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(d) 3.</label> <br>
-    </form> <br>
-    <form class="q3">
-      <p>3. Combine terms: 12a + 26b -4b – 16a.</p>
-      <input type="radio" name="a">
-      <label for="a">(a) 4a + 22b,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(b) -28a + 30b,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(c) -4a + 22b,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(d) 28a + 30b.</label> <br>
-    </form> <br>
-    <form class="q4">
-      <p>4. What is |-26|?</p>
-      <input type="radio" name="a">
-      <label for="a">(a) -26,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(b) 26,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(c) 0,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(d) 1.</label> <br>
-    </form> <br>
-    <form class="q5">
-      <p>5. Simplify: (4 – 5) – (13 – 18 + 2).</p>
-      <input type="radio" name="a">
-      <label for="a">(a) -1,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(b) -2,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(c) 1,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(d) 2.</label> <br>
-    </form> <br>
-    <form class="q6">
-      <p>6. Who is the current president of the federal republic of Nigeria?</p>
-      <input type="radio" name="a">
-      <label for="a">(a) President Umar Musa Yar'Adua</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(b) President Rabiu Musa Kwakanso,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(c) President Muhammadu Buhari,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(d) President Donald Trump</label> <br>
-    </form> <br>
-    <form class="q7">
-      <p>7. Who is the current CBN Governor?</p>
-      <input type="radio" name="a">
-      <label for="a">(a) Godwin Emefiele</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(b) Sanusi Lamido Sanusi,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(c) Bayo Adelabu</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(d) Abu Yaasir</label> <br>
-    </form> <br>
-    <form class="q8">
-      <p>8. In the Nigerian flag, what does the white color represent?</p>
-      <input type="radio" name="a">
-      <label for="a">(a) Strength</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(b) Peace</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(c) Agriculture and Natural resources</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(d) Love</label> <br>
-    </form> <br>
-    <form class="q9">
-      <p>9. How many geopolitical zones is Nigeria divided into?</p>
-      <input type="radio" name="a">
-      <label for="a">(a) 5,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(b) 6,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(c) 4,</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(d) 3.</label> <br>
-    </form> <br>
+  <div class="Q-section px-5 my-0 py-1">
+    <div class="Q-container">
+        
+        <form class="Quiz-form fw-lighter text-black">
+          <div class="my-5">
+            <p>1. Which is greater than 4?</p>
+            <div>
+              <input type="radio" name="Q1" value="A" checked>
+              <label> 5,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q1" value="B" >
+              <label> -5,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q1" value="C" >
+              <label> -1/2,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q1" value="D" >
+              <label> -25.</label> <br>
+            </div>
+          </div>
 
-    <form class="q10">
-      <p>10. Which city in Nigeria was the first federal capital territory of Nigeria?</p>
-      <input type="radio" name="a">
-      <label for="a">(a) Abuja</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(b) Lagos</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(c) Lakisan</label> <br>
-      <input type="radio" name="a">
-      <label for="a">(d) Calabar</label> <br>
-    </form> <br>
-    <input type="submit">
+          <div class="my-5">
+            <p>2. Which is the smallest?</p>
+            <div>
+              <input type="radio" name="Q2" value="A" checked>
+              <label> -1,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q2" value="B" >
+              <label> 0,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q2" value="C" >
+              <label> -1/2,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q2" value="D" >
+              <label> 3.</label> <br>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p>3. Combine terms: 12a + 26b -4b – 16a.</p>
+            <div>
+              <input type="radio" name="Q3" value="A" checked>
+              <label> 4a + 22b,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q3" value="B" >
+              <label> -28a + 30b,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q3" value="C" >
+              <label> -4a + 22b,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q3" value="D" >
+              <label> 28a + 30b.</label> <br>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p>4. What is |-26|?</p>
+            <div>
+              <input type="radio" name="Q4" value="A" checked>
+              <label> -26,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q4" value="B" >
+              <label> 26,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q4" value="C" >
+              <label> 0,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q4" value="D" >
+              <label> 1.</label> <br>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p>5. Simplify: (4 – 5) – (13 – 18 + 2).</p>
+            <div>
+              <input type="radio" name="Q5" value="A" checked>
+              <label> -1,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q5" value="B" >
+              <label> -2,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q5" value="C" >
+              <label> 1,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q5" value="D" >
+              <label> 2.</label> <br>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p>6. Who is the current president of the federal republic of Nigeria?</p>
+            <div>
+              <input type="radio" name="Q6" value="A" checked>
+              <label> President Umar Musa Yar'Adua,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q6" value="B" >
+              <label> President Rabiu Musa Kwakanso,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q6" value="C" >
+              <label> President Muhammadu Buhari,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q6" value="D" >
+              <label> President Donald Trump.</label> <br>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p>7. Who is the current CBN Governor?</p>
+            <div>
+              <input type="radio" name="Q7" value="A" checked>
+              <label> Godwin Emefiele,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q7" value="B" >
+              <label> Sanusi Lamido Sanusi,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q7" value="C" >
+              <label> Bayo Adelabu</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q7" value="D" >
+              <label> Abu Yaasir.</label> <br>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p>8. In the Nigerian flag, what does the white color represent?</p>
+            <div>
+              <input type="radio" name="Q8" value="A" checked>
+              <label> Strength,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q8" value="B" >
+              <label> Peace,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q8" value="C" >
+              <label> Agriculture and Natural resources</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q8" value="D" >
+              <label> Love.</label> <br>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p>9. How many geopolitical zones is Nigeria divided into?</p>
+            <div>
+              <input type="radio" name="Q9" value="A" checked>
+              <label> 5,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q9" value="B" >
+              <label> 6,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q9" value="C" >
+              <label> 4,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q9" value="D" >
+              <label> 3.</label> <br>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p>10. Which city in Nigeria was the first federal capital territory of Nigeria?</p>
+            <div>
+              <input type="radio" name="Q10" value="A" checked>
+              <label> Abuja,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q10" value="B" >
+              <label> Lagos,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q10" value="C" >
+              <label> Lakisan,</label> <br>
+            </div>
+            <div>
+              <input type="radio" name="Q10" value="D" >
+              <label> Calabar.</label> <br>
+            </div>
+          </div>
+          <div class="text-center">
+            <input type="submit" class="btn btn-light">
+          </div>
+
+        </form> <br>     
+    </div>
   </div>
 
-  <script scr="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
