@@ -1,5 +1,6 @@
 const correctOptions = ['A','A','C','B','D','C','A','B','B','D'];
 const form = document.querySelector('.Quiz-form');
+const result = document.querySelector('.result');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -11,8 +12,22 @@ form.addEventListener('submit', e => {
             score += 10;
         }
     })
-    //console.log(form.Q1.value)
-    console.log(score);
+
+    scrollTo(0,0);
+    
+    result.classList.remove('d-none');
+
+    let output = 0;
+    let timer = setInterval(() => {
+        result.querySelector('span').textContent = `${output}%`;
+        
+        if(output === score){
+            clearInterval(timer)
+        }else{
+            output++;
+        }
+    }, 40);
+    
 });
 
-console.log(form.Q2.value);
+

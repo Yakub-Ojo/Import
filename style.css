@@ -1,5 +1,10 @@
-.topic{
-    font-size: 100px;
+.result>h4{
+    font-size: 40px;
+    background-color:rgb(92, 165, 233)
+    
+}
+.result>h4>span{
+    color: rgb(201, 235, 12);
 }
 .my-5>p{
     font-weight: 500;
